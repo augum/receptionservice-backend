@@ -11,4 +11,5 @@ public interface CategorieService {
     CategorieResponseDTO getCategorie(String id);
     CategorieResponseDTO update(String id,CategorieRequestDTO categorieRequestDTO);
     List<CategorieResponseDTO> listeCategorie();
+    String delete(String id);
 }
