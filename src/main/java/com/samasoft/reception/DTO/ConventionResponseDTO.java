@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @AllArgsConstructor @NoArgsConstructor
-public class ConventionRequestDTO {
+public class ConventionResponseDTO {
     private String id;
     private String libelle;
 }

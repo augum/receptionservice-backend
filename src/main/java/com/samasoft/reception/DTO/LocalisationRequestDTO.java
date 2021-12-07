@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @AllArgsConstructor @NoArgsConstructor
-public class LocalisationDTO {
+public class LocalisationRequestDTO {
     private String id;
     private String libelle;
 }

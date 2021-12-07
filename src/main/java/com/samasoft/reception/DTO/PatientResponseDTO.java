@@ -7,8 +7,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
 @Data @NoArgsConstructor @AllArgsConstructor
-public class PatientRequestDTO {
+public class PatientResponseDTO {
     private String id;
     private String nom;
     private String postnom;

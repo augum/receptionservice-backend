@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class CommuneDTO {
+public class CommuneRequestDTO {
     private String Id;
     private String Libelle;
 }

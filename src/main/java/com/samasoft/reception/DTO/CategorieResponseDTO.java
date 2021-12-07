@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data @NoArgsConstructor @AllArgsConstructor
-public class CategorieRequestDTO {
+public class CategorieResponseDTO {
     private String id;
     private  String libelle;
 }

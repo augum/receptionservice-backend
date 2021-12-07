@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor @AllArgsConstructor
-public class NationaliteDTO {
+public class NationaliteRequestDTO {
     private String id;
     private String libelle;
 }
