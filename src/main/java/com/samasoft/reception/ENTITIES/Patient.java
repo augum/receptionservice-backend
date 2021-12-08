@@ -18,7 +18,7 @@ public class Patient {
     private String prenom;
     private String etatCivil;
     private String sexe;
-    @OneToOne
+    @OneToMany
     private Nationalite nationalite;
     private String avenue;
     private String quartier;
@@ -34,6 +34,6 @@ public class Patient {
     private Categorie categorie;
     private String titulaire;
     private String matricule;
-    @OneToOne
+    @OneToMany
     private Profession profession;
 }
