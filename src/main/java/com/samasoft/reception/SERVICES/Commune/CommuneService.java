@@ -10,4 +10,5 @@ public interface CommuneService {
     CommuneResponseDTO getCommune(String id);
     CommuneResponseDTO update(String id,CommuneRequestDTO communeRequestDTO);
     List<CommuneResponseDTO> listeCommune();
+    String delete(String id);
 }
