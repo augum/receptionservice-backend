@@ -10,4 +10,5 @@ public interface ProfessionService {
     ProfessionResponseDTO getProfession(String id);
     ProfessionResponseDTO update(String id, ProfessionRequestDTO professionRequestDTO);
     List<ProfessionResponseDTO> listeProfession();
+    String delete(String id);
 }

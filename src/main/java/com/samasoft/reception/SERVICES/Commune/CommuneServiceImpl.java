@@ -2,9 +2,8 @@ package com.samasoft.reception.SERVICES.Commune;
 
 import com.samasoft.reception.DTO.CommuneRequestDTO;
 import com.samasoft.reception.DTO.CommuneResponseDTO;
-import com.samasoft.reception.ENTITIES.Categorie;
 import com.samasoft.reception.ENTITIES.Commune;
-import com.samasoft.reception.EXCEPTIONS.CategorieNotFoundException;
+import com.samasoft.reception.EXCEPTIONS.RessourceNotFoundException;
 import com.samasoft.reception.MAPPERS.CommuneMapper;
 import com.samasoft.reception.REPOSITORIES.CommuneRepository;
 import lombok.AllArgsConstructor;
@@ -57,9 +56,9 @@ public class CommuneServiceImpl implements CommuneService {
     public String delete(String id) {
         Commune commune = communeRepository.getById(id);
         if(commune.getId().isEmpty()){
-            new CategorieNotFoundException("Categorie not found");
+            new RessourceNotFoundException("Commune not found");
         }
         communeRepository.delete(commune);
-        return "Catégorie bien supprimée";
+        return "Commune bien supprimée";
     }
 }

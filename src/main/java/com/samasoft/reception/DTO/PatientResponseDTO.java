@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 
 @Data @NoArgsConstructor @AllArgsConstructor
 public class PatientResponseDTO {
@@ -16,22 +17,17 @@ public class PatientResponseDTO {
     private String prenom;
     private String etatCivil;
     private String sexe;
-    @OneToMany
-    private Nationalite nationalite;
+    private String idNationalite;
     private String avenue;
     private String quartier;
-    @OneToOne
-    private Commune commune;
+    private String idCommune;
     private String telephone;
     private String email;
-    @OneToOne
-    private Localisation localisation;
-    @OneToOne
-    private Convention convention;
-    @OneToOne
-    private Categorie categorie;
+    private String idLocalisation;
+    private String idConvention;
+    private String idCategorie;
     private String titulaire;
     private String matricule;
-    @OneToMany
-    private Profession profession;
+    private String idProfession;
+
 }

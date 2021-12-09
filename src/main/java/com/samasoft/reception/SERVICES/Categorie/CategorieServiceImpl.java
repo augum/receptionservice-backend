@@ -3,7 +3,7 @@ package com.samasoft.reception.SERVICES.Categorie;
 import com.samasoft.reception.DTO.CategorieRequestDTO;
 import com.samasoft.reception.DTO.CategorieResponseDTO;
 import com.samasoft.reception.ENTITIES.Categorie;
-import com.samasoft.reception.EXCEPTIONS.CategorieNotFoundException;
+import com.samasoft.reception.EXCEPTIONS.RessourceNotFoundException;
 import com.samasoft.reception.MAPPERS.CategorieMapper;
 import com.samasoft.reception.REPOSITORIES.CategorieRepository;
 import lombok.AllArgsConstructor;
@@ -65,7 +65,7 @@ public class CategorieServiceImpl implements CategorieService {
     public String delete(String id) {
         Categorie categorie = categorieRepository.getById(id);
         if(categorie.getId().isEmpty()){
-            new CategorieNotFoundException("Categorie not found");
+            new RessourceNotFoundException("Categorie not found");
         }
          categorieRepository.delete(categorie);
         return "Catégorie bien supprimée";

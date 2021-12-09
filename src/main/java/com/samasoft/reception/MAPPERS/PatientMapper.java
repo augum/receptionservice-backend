@@ -6,7 +6,7 @@ import com.samasoft.reception.ENTITIES.Patient;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
-public interface patientMapper {
+public interface PatientMapper {
     PatientResponseDTO patientToPatientResponsedto(Patient patient);
     Patient patientrequestdtoTopatient(PatientRequestDTO CategorieResponseDTO);
 }

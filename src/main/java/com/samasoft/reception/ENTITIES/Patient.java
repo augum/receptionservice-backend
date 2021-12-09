@@ -4,10 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
+
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor
 public class Patient {
@@ -18,22 +16,28 @@ public class Patient {
     private String prenom;
     private String etatCivil;
     private String sexe;
-    @OneToMany
+    private String idNationalite;
+    @Transient
     private Nationalite nationalite;
     private String avenue;
     private String quartier;
-    @OneToOne
+    private String idCommune;
+    @Transient
     private Commune commune;
     private String telephone;
     private String email;
-    @OneToOne
+    private String idLocalisation;
+    @Transient
     private Localisation localisation;
-    @OneToOne
+    private String idConvention;
+    @Transient
     private Convention convention;
-    @OneToOne
+    private String idCategorie;
+    @Transient
     private Categorie categorie;
     private String titulaire;
     private String matricule;
-    @OneToMany
+    private String idProfession;
+    @Transient
     private Profession profession;
 }
