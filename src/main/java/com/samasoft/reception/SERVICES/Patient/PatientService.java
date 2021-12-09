@@ -11,5 +11,6 @@ public interface PatientService {
     PatientResponseDTO getPatien(String id);
     PatientResponseDTO update(String id,PatientRequestDTO patientRequestDTO);
     List<PatientResponseDTO> listePatient();
+    String delete(String id);
 
 }

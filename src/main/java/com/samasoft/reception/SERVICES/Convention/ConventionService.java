@@ -8,8 +8,9 @@ import com.samasoft.reception.DTO.ConventionResponseDTO;
 import java.util.List;
 
 public interface ConventionService {
-    ConventionResponseDTO save(CommuneRequestDTO communeRequestDTO);
+    ConventionResponseDTO save(ConventionRequestDTO conventionRequestDTO);
     ConventionResponseDTO getConvention(String id);
     ConventionResponseDTO update(String id, ConventionRequestDTO conventionRequestDTO);
     List<ConventionResponseDTO> listeConvention();
+    String delete(String id);
 }

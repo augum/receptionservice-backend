@@ -11,4 +11,5 @@ public interface LocalisationService {
     LocalisationResponseDTO getLocalisation(String id);
     LocalisationResponseDTO update(String id, LocalisationRequestDTO localisationRequestDTO);
     List<LocalisationResponseDTO> listeLocalisation();
+    String delete(String id);
 }

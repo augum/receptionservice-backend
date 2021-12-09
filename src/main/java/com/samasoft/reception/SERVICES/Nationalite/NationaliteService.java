@@ -10,4 +10,5 @@ public interface NationaliteService {
     NationaliteResponseDTO getNationalie(String id);
     NationaliteResponseDTO update(String id, NationaliteRequestDTO nationaliteRequestDTO);
     List<NationaliteResponseDTO> listeNationalite();
+    String delete(String id);
 }
